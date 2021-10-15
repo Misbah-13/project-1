@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fitness pro</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* css reset */
+    body {
+        /* color: white; */
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/gym.jpg');
+        /* height: 455px; */
+    }
+
+    .header {
+        background-color: red;
+        height: 80px;
+
+    }
+
+    .left {
+        /* border: 2px solid black; */
+        display: inline-block;
+        position: absolute;
+        left: 34px;
+        top: 0px;
+    }
+
+    .left img {
+        width: 80px;
+        /* filter: invert(100%);    inverts the color of the image */
+        border-radius: 65px;
+        margin-left: 16px;
+    }
+
+    .left div {
+        text-align: center;
+        /* background-color: white; */
+        font-size: 22px;
+    }
+
+    .mid {
+        /* border: 2px solid red; */
+        display: block;
+        width: 50%;
+        margin-left: 30%;
+
+    }
+
+    .right {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 20px;
+    }
+
+    .navbar {
+        display: inline-block;
+
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+        margin-top: 10px;
+        height: 50%;
+    }
+
+    .navbar li a {
+        color: black;
+        text-decoration: none;
+        padding: 19px 17px;
+        border: 2px solid black;
+        border-radius: 55px;
+        background-color: white;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: white;
+        background-color: rgb(163, 156, 156);
+    }
+
+    .btn {
+        margin: -13px 9px;
+        color: black;
+        background-color: white;
+        padding: 19px 10px;
+        border-radius: 44px;
+        font: 20px;
+        cursor: pointer;
+        /* height: 78px; */
+
+    }
+
+   .btn1{
+    margin: -13px 9px;
+        color: black;
+        background-color: white;
+        padding: 11px 10px;
+        border-radius: 44px;
+        font: 20px;
+        cursor: pointer;
+
+    }
+    .btn:hover {
+        background-color: rgb(163, 156, 156);
+    }
+    .btn1:hover {
+        background-color: rgb(163, 156, 156);
+    }
+
+    .container {
+        border: 2px solid white;
+        color: white;
+        margin: 68px 33px;
+        padding: 26px 53px;
+        width: 15%;
+        border-radius: 28px;
+        background-color: black;
+    
+    }
+
+    .form-group {
+        text-align: center;
+        display: block;
+        width: 50%;
+        padding: 1px;
+        border: 2px solid black;
+        border-radius: 8px;
+        margin: auto;
+        margin-left: 22px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .container button {
+        display: block;
+        width: 35%;
+        margin: auto;
+    
+    }
+</style>
+
+
+<body>
+    <header class="header">
+        <!-- left for logo -->
+        <div class="left">
+            <img src="img/bg.jpg" alt="">
+            <div>Fitness Pro</div>
+        </div>
+
+        <!-- mid for navigation bar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- right for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+
+    </header>
+
+    <div class="container">
+        <h1>Join Now.....
+            <form action="noaction.php">
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter Your Name">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter Your Age">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter Your Gender">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter Your Location">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter Your Phone No">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter Your Email Id">
+                </div>
+                <button class="btn1">Submit</button>
+            </form>
+        </h1>
+    </div>
+</body>
+
+</html>
